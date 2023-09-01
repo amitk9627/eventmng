@@ -7,7 +7,7 @@ const app = require('./app.js');
 
 
 const ConnectDB = async () => {
-    await mongoose.connect(process.env.MongoDbUrl)
+    await mongoose.connect("mongodb+srv://ramitgzp56:Kzlxby3jyJUiYcv1@cluster0.fvgprcz.mongodb.net/")
 };
 ConnectDB()
     .then(() => console.log("Connected to Data base"))
